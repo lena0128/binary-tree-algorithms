@@ -11,3 +11,15 @@ A binary tree is a tree data structure in which each node has at most two ï¼ˆ0ï¼
 
 * root node - a node that has no parent.
 * leaf node - a node that has no children.
+
+### Linear Data Structure
+A linear data structure has data elements connected to each other so that elements are arranged in a sequential manner and each element is connected to the element in front of it and behind it.
+
+
+# Binary Tree Algorithms
+## 1. Depth First Values - Depth First Traversal
+Given the root node of a binary tree, we must go deeper in the tree until we can't anymore and then we can go across the tree. 
+
+* time complexity - O(n) - because we are going to add every node to our stack and those nodes are also going to leave the stack exactly ONCE. We are NOT double visting any of the nodes.
+* space complexity - O(n) - because the only thing we stored was the stack, which is linear data structure. We are not going to put ever more that n things on the stack. 
+
