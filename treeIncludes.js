@@ -4,7 +4,7 @@
 // (2) at this point I am gonna check if the current value is the same as the target value;
 // (3) if not a's children b and c are put on the queue;
 // (4) b left the queue and marked as current; b is checked; b's children d and e are put on the queue;
-// (5) and so on...
+// (5) and keep going...
 
 const treeIncludesBreadthFirst = (root, target) => {
     if (root === null) return false;
@@ -13,11 +13,13 @@ const treeIncludesBreadthFirst = (root, target) => {
     while (queue.length > 0) {
         const current = queue.shift();
         if(current.val === target) return true
-        else {
-            queue.push(current.left)
-            queue.push(current.right) 
-        }        
+        
+        if (current.left) queue.push(current.left);
+        if (current.right) queue.push(current.right);         
     }
     return false
+}
+
+const treeIncludesBreadthFirstRecursion = (root, target) => {
 
 }

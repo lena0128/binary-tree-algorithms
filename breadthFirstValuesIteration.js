@@ -1,7 +1,7 @@
 
-// We consider the first node as the front one in the queue
+// We consider the first node as the front one in the queue (comes in first, leave first)
 // Use the Array.shift() method to remove the first element from the array and return the removed element
-// 
+//  left to right version
 const breadthFirstValues = (root) => {
     if (root === null) return [];
 
