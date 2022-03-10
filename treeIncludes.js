@@ -20,6 +20,13 @@ const treeIncludesBreadthFirst = (root, target) => {
     return false
 }
 
-const treeIncludesBreadthFirstRecursion = (root, target) => {
 
+// depth-first recursive solution
+// quite elegant solution
+// 
+const treeIncludesBreadthFirstRecursion = (root, target) => {
+   if (root === null) return false; // base case
+   if (root.val === target) return true;
+   
+   return treeIncludesBreadthFirstRecursion(root.left, target) || treeIncludesBreadthFirstRecursion(root.right, target);
 }
