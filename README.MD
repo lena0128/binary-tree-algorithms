@@ -17,9 +17,24 @@ A linear data structure has data elements connected to each other so that elemen
 
 
 # Binary Tree Algorithms
-## 1. Depth First Values - Depth First Traversal
-Given the root node of a binary tree, we must go deeper in the tree until we can't anymore and then we can go across the tree. 
+## 1. Depth First Values - Stack Data Structure
+Given the root node of a binary tree, write a function - depthFirstValues - that should return an array containing all values of the tree in depth-first order.
 
+### What is Depth-first Search(深度优先搜索)?
+Depth-first search is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node and explores as far as possible along each branch before backtracking.
+
+### Big O
+* n = # of nodes
 * time complexity - O(n) - because we are going to add every node to our stack and those nodes are also going to leave the stack exactly ONCE. We are NOT double visting any of the nodes.
 * space complexity - O(n) - because the only thing we stored was the stack, which is linear data structure. We are not going to put ever more that n things on the stack. 
 
+## 2. Breath First Values - Queue Data Structure
+Given the root node of a binary tree, write a breadthFirstValues function that should return an array containing all values of the tree in breadth-first order.
+
+### What is Breadth-first Search(广度优先搜索)?
+Breadth-first search is an algorithm for searching a tree data structure for a node that satisfies a given property. It starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level. 
+
+### Big O
+* n = # of nodes
+* time complexity - O(n) - because we are going to add every node to our queue and those nodes are also going to leave the queue exactly ONCE. We are NOT double visting any of the nodes. Note that this time complexity assumes that we have a maximally effient queue that has O of one add and remove operations.
+* space complexity - O(n) - because the only thing we stored was the queue, which is linear data structure. We are not going to put ever more that n things to the queue. 
