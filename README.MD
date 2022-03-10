@@ -38,3 +38,11 @@ Breadth-first search is an algorithm for searching a tree data structure for a n
 * n = # of nodes
 * time complexity - O(n) - because we are going to add every node to our queue and those nodes are also going to leave the queue exactly ONCE. We are NOT double visting any of the nodes. Note that this time complexity assumes that we have a maximally effient queue that has O of one add and remove operations.
 * space complexity - O(n) - because the only thing we stored was the queue, which is linear data structure. We are not going to put ever more that n things to the queue. 
+
+## 3. Tree Includes Problem
+Given a binary tree as well as a target value to look for, write a function that returns a boolean value. Try to solve this problem using both breadth-first and depth-first search.
+
+### Big O
+* n = # of nodes
+* time complexity - O(n) - because we are going to add every node to our queue and those nodes are also going to leave the queue exactly ONCE. We are NOT double visting any of the nodes. Note that this time complexity assumes that we have a maximally effient queue that has O of one add and remove operations.
+* space complexity - O(n) - because the only thing we stored was the queue, which is linear data structure. We are not going to put ever more that n things to the queue. 
