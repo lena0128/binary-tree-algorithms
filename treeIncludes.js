@@ -23,10 +23,10 @@ const treeIncludesBreadthFirst = (root, target) => {
 
 // depth-first recursive solution
 // quite elegant solution
-// 
+// The logical OR operator ( || ) 
 const treeIncludesBreadthFirstRecursion = (root, target) => {
    if (root === null) return false; // base case
-   if (root.val === target) return true;
-   
+   if (root.val === target) return true; // put this after the null case
+
    return treeIncludesBreadthFirstRecursion(root.left, target) || treeIncludesBreadthFirstRecursion(root.right, target);
 }
