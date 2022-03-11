@@ -47,11 +47,27 @@ Given a binary tree as well as a target value to look for, write a function that
 * time complexity - O(n) - because we are going to add every node to our queue and those nodes are also going to leave the queue exactly ONCE. We are NOT double visting any of the nodes. Note that this time complexity assumes that we have a maximally effient queue that has O of one add and remove operations.
 * space complexity - O(n) - because the only thing we stored was the queue, which is linear data structure. We are not going to put ever more that n things to the queue. 
 
-## 4. Tree Sum Problem
-Given a root of binary tree within which the values are going to be numbers , write a function to calculate the sum. 
+## 4. Tree Sum Problem => Depth-First
+Given a root of binary tree within which the values are numbers , write a function to calculate the sum. 
 I am going to use the depth-first traversal to solve this problem. Remember that the depth-first traversal relies on a stack.
 
 ### Big O
+* n = # of nodes
+* time complexity - O(n)
+* space complexity - O(n)
+
+## 5. Tree Min Value Problem
+Given a root of binary tree within which the values are numbers, white a function that returns the minimum value. We may assume that the tree is non-empty.
+
+### Big O 
+* n = # of nodes
+* time complexity - O(n)
+* space complexity - O(n)
+
+## 6. Max Root to Leaf Path Sum
+Given a root of a binary tree that contains numver values, write a function that will return the maximum sum of any root to leaf path within the tree. The tree is non-empty.
+
+### Big O 
 * n = # of nodes
 * time complexity - O(n)
 * space complexity - O(n)

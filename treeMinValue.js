@@ -17,7 +17,10 @@ const treeMinValue = (root) => {
     return smallest
 }
 
-// in-depth 
+//The shift() method removes the first element from an array and returns that removed element. 
+// This method changes the length of the array.
+
+// depth-first traversal 
 const treeMinValueRecursion = (root) => {
     if (root === null) return Infinity;
 
