@@ -1,5 +1,5 @@
 # Binary Tree (二叉树)
-A binary tree is a tree data structure in which each node has at most two （0， 1， 2）children, which are referred to as the left child and the right child. We use parent and child relationship when describing the relationship among nodes within a tree. 
+A binary tree is a tree data structure in which each node has at most two （0， 1， 2）children, which are referred to as the left child and the right child. We use parent and child relationship when describing the relationship among nodes within a tree. Binary tree is where data is organized in a hierarchical structure. 
 
 ## Three Criteria  
 - (1). at most 2 children per node
