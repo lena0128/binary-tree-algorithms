@@ -19,7 +19,7 @@ b.left = d;
 b.right = e;
 c.right = f;
 
-// The call stack behavior gives the same type od ordering
+// The call stack behavior gives the same type of ordering
 const depthFirstValues = (root) => {
     if (root === null) return []; // base value
 
